@@ -3,37 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈페이지</title>
+    <title>핀테크 교육생 강의 정리</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f4f4f4;
         }
-        .container {
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            margin-bottom: 10px;
+        .lecture-list {
+            list-style: none;
+            padding: 0;
         }
-        p {
-            color: #666;
+        .lecture-list li {
+            background: #eef;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lecture-list li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .lecture-list li a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        핀테크 교육 플랫폼
+    </header>
     <div class="container">
-        <h1>환영합니다!</h1>
-        <p>이곳은 홈페이지의 기본 템플릿입니다.</p>
+        <h1>강의 정리</h1>
+        <p>각 강의 내용을 확인하고 복습하세요.</p>
+        <ul class="lecture-list">
+            <li>핀테크 개요 및 발전 과정 <a href="#">자세히 보기</a></li>
+            <li>블록체인과 암호화폐 기술 <a href="#">자세히 보기</a></li>
+            <li>디지털 결제 시스템 <a href="#">자세히 보기</a></li>
+            <li>인공지능과 금융 데이터 분석 <a href="#">자세히 보기</a></li>
+        </ul>
+        <a href="#" class="btn">더 많은 강의 보기</a>
     </div>
+    <footer>
+        © 2025 핀테크 교육 플랫폼. 모든 권리 보유.
+    </footer>
 </body>
 </html>
