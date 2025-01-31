@@ -1,1 +1,1 @@
-# 250131 Visualization git practice
+# 250131 git practice
